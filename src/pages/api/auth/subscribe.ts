@@ -4,6 +4,7 @@ import { stripe } from "../../../services/stripe";
 
 export default async(req: NextApiRequest, res: NextApiResponse) => {
     if(req.method === 'POST'){
+        
         const session = await getSession({req})
 
         const stripeCostumer = await stripe.customers.create({
