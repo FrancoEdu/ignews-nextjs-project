@@ -1,4 +1,4 @@
-import {fauna}  from '../../../services/fauna'
+import {fauna}  from '../../services/fauna'
 import NextAuth from 'next-auth'
 import GithubProvider  from 'next-auth/providers/github'
 import {query as q} from 'faunadb'
